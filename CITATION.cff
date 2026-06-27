@@ -35,7 +35,7 @@ keywords:
 license: MIT
 version: "2.0.0"
 date-released: "2026-05-11"
-doi: "PENDING_FIRST_RELEASE"
+doi: "10.5281/zenodo.20965771"
 preferred-citation:
   type: unpublished
   title: "External validation and SHAP-based interpretation of an XGBoost model for predicting extubation failure in mechanically-ventilated ICU patients"
