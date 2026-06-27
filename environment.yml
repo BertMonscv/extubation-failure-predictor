@@ -1,0 +1,37 @@
+# =============================================================================
+# environment.yml  —  reproducibility environment ("extub") for the
+# extubation-failure / cross-database SHAP-consistency analysis.
+#
+# Versions are pinned to the verified `conda list -n extub` on the analysis
+# machine (osx-arm64 / macOS, Apple Silicon). This environment reproduces all
+# reported numbers, tables, and figures.
+#
+# numpy is pinned to 1.26.4 (numpy-1.x) — the correct-era pairing for
+# xgboost 1.7.6; there is NO numpy-2.x ABI issue with this stack.
+#
+# Recreate:
+#   conda env create -f environment.yml
+#   conda activate extub
+#
+# Notes:
+#  * All packages resolve from conda-forge (CPU builds of xgboost/lightgbm).
+#  * The frozen model file xgb_extubation_failure_v2.pkl was serialized under an
+#    earlier XGBoost; it loads under 1.7.6 with a benign compatibility warning.
+#  * For bit-exact, same-platform reproduction, use the full lock in
+#    results/conda_list_extub.txt rather than this version-pinned file.
+# =============================================================================
+name: extub
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.11.15
+  - numpy=1.26.4
+  - scipy=1.17.1
+  - pandas=3.0.3
+  - scikit-learn=1.9.0
+  - matplotlib=3.10.9
+  - xgboost=1.7.6
+  - shap=0.48.0
+  - lightgbm=4.6.0
+  - catboost=1.2.7

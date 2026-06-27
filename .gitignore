@@ -1,0 +1,15 @@
+MIMIC-IV*.csv
+eICU*.csv
+eicu*.csv
+cleaned_merged_data.csv
+pre.csv
+*_raw.csv
+*.npy
+*.npz
+!data/predictions/eicu_mv_positive_mask.npy
+!results_1c/arrays.npz
+results_aggregated.json
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/

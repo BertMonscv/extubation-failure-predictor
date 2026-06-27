@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+title: "Extubation-Failure Risk Predictor"
+message: "If you use this software, please cite both the manuscript and the software."
+type: software
+authors:
+  - family-names: "Li"
+    given-names: "Zongyue"
+    orcid: "https://orcid.org/0009-0007-1907-3655"
+    affiliation: "First Affiliated Hospital with Nanjing Medical University"
+    email: "ilizyue@163.com"
+  - family-names: "Wu"
+    given-names: "Yanhu"
+    orcid: "https://orcid.org/0000-0002-7941-8623"
+    affiliation: "First Affiliated Hospital with Nanjing Medical University"
+    email: "wuyanhu@njmu.edu.cn"
+repository-code: "https://github.com/BertMonscv/extubation-failure-predictor"
+url: "https://github.com/BertMonscv/extubation-failure-predictor"
+abstract: >-
+  XGBoost-based clinical prediction model for extubation failure in
+  mechanically-ventilated ICU patients, trained on MIMIC-IV and externally
+  validated on the eICU Collaborative Research Database. Includes a
+  reproducible analysis pipeline, publication-grade figures, SHAP
+  explainability outputs, and an interactive Streamlit demonstration
+  application.
+keywords:
+  - extubation failure
+  - ICU
+  - mechanical ventilation
+  - XGBoost
+  - SHAP
+  - external validation
+  - MIMIC-IV
+  - eICU-CRD
+  - clinical decision support
+license: MIT
+version: "2.0.0"
+date-released: "2026-05-11"
+doi: "10.5281/zenodo.20117568"
+preferred-citation:
+  type: unpublished
+  title: "External validation and SHAP-based interpretation of an XGBoost model for predicting extubation failure in mechanically-ventilated ICU patients"
+  authors:
+    - family-names: "Li"
+      given-names: "Zongyue"
+    - family-names: "Wu"
+      given-names: "Yanhu"
+  year: 2026
