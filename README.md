@@ -8,7 +8,7 @@ rankings are, and how a single-model consistency estimate (C1) overstates the
 agreement that an independently trained model (C2) actually reproduces.
 
 > **Fill in after you create the repository and release:**
-> GitHub: `https://github.com/BertMonscv/extubation-failure-predictor` · Zenodo: 10.5281/zenodo.20965771 · Live app: https://extubation-failure-predictor.streamlit.app
+> GitHub: `https://github.com/BertMonscv/extubation-failure-predictor` · Zenodo: 10.5281/zenodo.20965771 · Live app: https://extubation-failure-predictor-zbni7gfjubbsejmyo5ruki.streamlit.app
 
 ## What this model is (and is not)
 - A research model trained at the **native event prevalence with no resampling
