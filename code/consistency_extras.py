@@ -24,7 +24,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression
 warnings.filterwarnings("ignore")
 
-DATA_DIR = "/Users/ilizyue/Documents/xgb_extubation_failure/data"
+DATA_DIR = __import__("os").path.expanduser("~/Documents/xgb_extubation_failure/data")
 sys.path.insert(0, DATA_DIR)
 import analysis_1c as A   # MODEL_M_PATH already points at the non-SMOTE pkl
 

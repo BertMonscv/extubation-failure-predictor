@@ -37,7 +37,7 @@ from catboost import CatBoostClassifier
 warnings.filterwarnings("ignore")
 
 # ------------------------- CONFIG -------------------------------------------
-DATA_DIR    = "/Users/ilizyue/Documents/xgb_extubation_failure/data"
+DATA_DIR    = __import__("os").path.expanduser("~/Documents/xgb_extubation_failure/data")
 PKL_NONSMOTE= os.path.join(DATA_DIR, "xgb_extubation_failure_v2_nonsmote.pkl")
 MIMIC_CSV   = os.path.join(DATA_DIR, "MIMIC-IVdata-1775367119727.csv")
 EICU_CSV    = os.path.join(DATA_DIR, "eICUdata-1775370213861.csv")

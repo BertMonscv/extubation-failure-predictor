@@ -46,7 +46,7 @@ import matplotlib.pyplot as plt
 # =============================================================================
 # CONFIG  (you should only ever need to touch DATA_DIR)
 # =============================================================================
-DATA_DIR = "/Users/ilizyue/Documents/xgb_extubation_failure/data"
+DATA_DIR = __import__("os").path.expanduser("~/Documents/xgb_extubation_failure/data")
 
 MIMIC_CSV = None
 EICU_CSV = None

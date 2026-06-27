@@ -1,6 +1,0 @@
-PRE-REGISTERED RULE:
-C2 (independent eICU model vs frozen MIMIC model, same eICU eval set) is the headline. Decision fixed before seeing results: SUPPORTS conservation iff C2 95%CI lower bound > R0_99 AND (C2 reaches >=60% of floor->ceiling OR C2 95%CI overlaps R2); NOT SUPPORTED iff C2 95%CI upper bound <= R0_99; otherwise PARTIAL/UNCERTAIN. C1 vs R1 is interpretive: if C1 falls within/near R1, state plainly that the frozen-model cross-database stability is largely structural.
-
-VERDICT: PARTIAL / UNCERTAIN
-WHY: C2=0.480 is above chance (floor=0.444) but below the within-system reproducibility ceiling (median R2=0.286; frac=35585985.62); most plausibly limited by the eICU event count.
-DETAIL: {'floor': 0.4441512166586166, 'ceiling': 0.2857142857142857, 'frac': 35585985.62116438, 'c2': 0.479737202279781, 'c2_ci': [0.31777389523268174, 0.5672949600871247]}

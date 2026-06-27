@@ -27,7 +27,7 @@ from sklearn.metrics import roc_auc_score, brier_score_loss
 from xgboost import XGBClassifier
 
 # ------------------------- CONFIG (edit if needed) ---------------------------
-DATA_DIR  = "/Users/ilizyue/Documents/xgb_extubation_failure/data"
+DATA_DIR  = __import__("os").path.expanduser("~/Documents/xgb_extubation_failure/data")
 PKL_IN    = os.path.join(DATA_DIR, "xgb_extubation_failure_v2.pkl")          # SMOTE deployed model
 PKL_OUT   = os.path.join(DATA_DIR, "xgb_extubation_failure_v2_nonsmote.pkl") # new, non-SMOTE
 MIMIC_CSV = os.path.join(DATA_DIR, "MIMIC-IVdata-1775367119727.csv")

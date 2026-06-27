@@ -25,7 +25,7 @@ import os, sys
 import numpy as np
 from scipy.stats import spearmanr
 
-DATA_DIR  = "/Users/ilizyue/Documents/xgb_extubation_failure/data"
+DATA_DIR  = __import__("os").path.expanduser("~/Documents/xgb_extubation_failure/data")
 N_SPLITS  = 40          # reduced from 200 for speed; medians are stable enough to compare LEVELS
 sys.path.insert(0, DATA_DIR)
 import analysis_1c as A  # reuses MODEL_M_PATH (now the non-SMOTE pkl), HP_M, HP_E_PRIMARY, etc.
